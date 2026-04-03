@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: "https://genai-interview-planner.onrender.com",
-    withCredentials: true,
+    baseURL: "https://genai-interview-planner.onrender.com", // ✅
+    withCredentials: true
 })
 
 
