@@ -6,8 +6,10 @@ const app = express()
 
 app.use(express.json())
 app.use(cookieParser())
+app.set('trust proxy', 1) // ✅ add this line before cors
+
 app.use(cors({
-    origin: "https://gen-ai-interview-planner.vercel.app", // ✅ your exact Vercel URL
+    origin: "https://gen-ai-interview-planner.vercel.app",
     credentials: true
 }))
 
